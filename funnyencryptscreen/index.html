@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="./script.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Funny Hacker Gen</title>
+</head>
+<body>
+    <div id="cont" class="flex flex-wrap space-x-2"></div>
+
+
+	<button type="button" id="bg-black" class="bg-slate-700 w-24 h-12"onclick="setbg('black'); setelemprops('bg-black', 'white'); setelemprops('bg-white', 'white'), setelemprops('txt-green', 'white'); setelemprops('txt-blue', 'white');setelemprops('start', 'white')">Black background</button>
+	<button type="button" id="bg-white" class="bg-slate-700 w-24 h-12"onclick="setbg('white'); setelemprops('bg-white', 'white')">white background</button>
+	<button type="button" id="txt-green" class="bg-slate-700 w-24 h-12"onclick="text('green')">green text</button>
+	<button type="button" id="txt-blue" class="bg-slate-700 w-24 h-12"onclick="text('blue')">blue text</button>
+
+
+	<button type="button" id="start" class="bg-slate-700 w-24 h-12"onclick="start()">Start</button>
+
+
+
+	<p id="sample" class="mt-24 ml-24">Sample Text</p>
+
+    
+        
+</body>
+</html>
+<style>
+	html {
+		overflow: hidden;
+	}
+</style>
